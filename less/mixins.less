@@ -1,1 +1,39 @@
 // Mixins in here
+
+//Border
+.border-bottom() {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.button-styles(@background-color) {
+    width: 80%;
+    color: @white;
+    background-color: @background-color;
+    border: 1px solid @silver;
+    border-radius: 10px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.mobile-content-flex(@direction) {
+    flex-flow: @direction nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-side-margins() {
+    margin-left: @mobile-margin;
+    margin-right: @mobile-margin;
+}
+
+.mobile-side-padding() {
+    padding-left: @mobile-padding;
+    padding-right: @mobile-padding;
+}
+
+.tablet-side-margins() {
+    margin-left: @tablet-margin;
+    margin-right: @tablet-margin;
+}
