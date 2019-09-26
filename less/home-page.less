@@ -9,6 +9,10 @@
     max-width: @max-width;
     border-bottom: @border-style;
 
+    @media @tablet {
+      .tablet-side-margins();
+    }
+    
     @media @mobile {
       .mobile-side-margins;
       border-bottom: none;
@@ -22,6 +26,10 @@
 
 .home {
 
+  @media @tablet {
+    padding: 0 @tablet-padding;
+  }
+  
   @media @mobile {
     padding: 0 @mobile-padding;
   }
@@ -122,6 +130,10 @@
       width: 75%;
       margin: 0 auto;
 
+      @media @tablet {
+        width: 100%;
+      }
+      
       @media @mobile {
         width: 100%;
       }
@@ -129,6 +141,10 @@
       img {
         border-radius: 10px;
 
+        @media @tablet {
+          width: 100%;
+        }
+        
         @media @mobile {
           width: 100%;
         }
@@ -143,8 +159,7 @@
 
     @media @mobile {
       .mobile-content-flex(column);
-      width: @mobile-content-width;
-      .mobile-side-margins();
+      width: 100%;
     }
 
     .destination {

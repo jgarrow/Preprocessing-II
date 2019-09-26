@@ -172,6 +172,12 @@ img {
   border-bottom: 2px dashed #C0C0C0;
   padding: 1.5rem 0;
 }
+@media (max-width: 768px) {
+  .nav-header {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
 .nav-header div {
   display: flex;
   justify-content: space-between;
@@ -223,6 +229,12 @@ img {
   max-width: 800px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 768px) {
+  .main-header .img-header {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
 @media (max-width: 500px) {
   .main-header .img-header {
     margin-left: 2rem;
@@ -232,6 +244,11 @@ img {
 }
 .main-header .img-header .header-content {
   margin: 2rem 0 1rem;
+}
+@media (max-width: 768px) {
+  .home {
+    padding: 0 3rem;
+  }
 }
 @media (max-width: 500px) {
   .home {
@@ -335,6 +352,11 @@ img {
   width: 75%;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .home .content-destination div {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .home .content-destination div {
     width: 100%;
@@ -342,6 +364,11 @@ img {
 }
 .home .content-destination div img {
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .home .content-destination div img {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-destination div img {
@@ -358,9 +385,7 @@ img {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    width: 96%;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    width: 100%;
   }
 }
 .home .content-pick .destination {
